@@ -101,6 +101,9 @@ public class BodySourceView : MonoBehaviour
                 
                 RefreshBodyObject(body, _Bodies[body.TrackingId]);
             }
+
+			// Tracking for UI Component
+			KinectInputModule.instance.TrackBody(body);
         }
     }
     
