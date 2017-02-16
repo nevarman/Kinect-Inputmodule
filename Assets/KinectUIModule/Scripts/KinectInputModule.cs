@@ -1,7 +1,5 @@
 ﻿using UnityEngine;
-using System.Collections;
 using UnityEngine.EventSystems;
-using System.Collections.Generic;
 using Windows.Kinect;
 [AddComponentMenu("Kinect/Kinect Input Module")]
 [RequireComponent(typeof(EventSystem))]

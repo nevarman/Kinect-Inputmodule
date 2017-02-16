@@ -152,7 +152,7 @@ public class DepthSourceView : MonoBehaviour
                 return;
             }
             
-            gameObject.renderer.material.mainTexture = _ColorManager.GetColorTexture();
+            gameObject.GetComponent<Renderer>().material.mainTexture = _ColorManager.GetColorTexture();
             RefreshData(_DepthManager.GetData(),
                 _ColorManager.ColorWidth,
                 _ColorManager.ColorHeight);
@@ -170,7 +170,7 @@ public class DepthSourceView : MonoBehaviour
                 return;
             }
             
-            gameObject.renderer.material.mainTexture = _MultiManager.GetColorTexture();
+            gameObject.GetComponent<Renderer>().material.mainTexture = _MultiManager.GetColorTexture();
             
             RefreshData(_MultiManager.GetDepthData(),
                         _MultiManager.ColorWidth,

@@ -103,6 +103,7 @@ public class BodySourceView : MonoBehaviour
             }
 
 			// Tracking for UI Component
+            if(body.IsTracked)
 			KinectInputModule.instance.TrackBody(body);
         }
     }
